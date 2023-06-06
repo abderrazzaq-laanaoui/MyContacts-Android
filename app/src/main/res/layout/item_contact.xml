@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<androidx.cardview.widget.CardView
+		android:id="@+id/cardView"
+		android:layout_width="match_parent"
+		android:layout_height="150dp"
+		app:cardElevation="4dp"
+		app:cardUseCompatPadding="true"
+		app:layout_constraintTop_toTopOf="parent">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:padding="16dp">
+
+				<ImageView
+					android:id="@+id/imageViewPhoto"
+					android:layout_width="100dp"
+					android:layout_height="100dp"
+					android:layout_marginEnd="10dp"
+					android:adjustViewBounds="true"
+					android:contentDescription="@string/photo"
+					android:paddingTop="10dp"
+					android:scaleType="centerCrop" />
+
+				<LinearLayout
+					android:layout_width="225dp"
+					android:layout_height="match_parent"
+					android:padding="10dp"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/textViewName"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="16sp"
+						android:textStyle="bold" />
+
+					<TextView
+						android:id="@+id/textViewPhone"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="14sp" />
+					<TextView
+						android:id="@+id/textViewEmail"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="14sp" />
+
+					<TextView
+						android:id="@+id/textViewTag"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:textSize="14sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="match_parent"
+					android:orientation="vertical"
+					android:layout_marginLeft="10dp">
+					<Button
+						android:id="@+id/btnDelete"
+						style="?attr/materialIconButtonFilledStyle"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:textSize="18sp"
+						app:icon="@drawable/ic_delete" />
+
+
+					<Button
+						android:id="@+id/btnEdit"
+						style="?attr/materialIconButtonFilledStyle"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:textSize="18sp"
+						app:icon="@drawable/ic_edit" />
+				</LinearLayout>
+
+			</LinearLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
